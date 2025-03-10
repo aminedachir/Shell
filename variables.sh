@@ -4,12 +4,8 @@ PRICE_PER_APPLE=5
 MyFirstLetters=ABC
 greeting='Hello        world!'
 
-# Escaping special characters
 echo "The price of an Apple today is: \$HK $PRICE_PER_APPLE"
-
-# Avoiding ambiguity
 echo "The first 10 letters in the alphabet are: ${MyFirstLetters}DEFGHIJ"
-# Preserving whitespace
 echo $greeting
 echo "$greeting"
 
