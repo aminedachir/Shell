@@ -20,6 +20,7 @@ aft_bay+=("Scientific Instruments")
 # Check if an argument is provided
 if [ $# -eq 0 ]; then
     echo "Please specify a cargo bay: forward, midship, or aft"
+    exit 1
 fi
 i=0
 # Display inventory based on the argument
@@ -40,5 +41,6 @@ elif [ "$1" = "aft" ]; then
     done
 else
     echo "Invalid cargo bay. Choose forward, midship, or aft."
+    exit 1
 fi
 
